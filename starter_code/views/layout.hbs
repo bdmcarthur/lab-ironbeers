@@ -8,9 +8,11 @@
   </head>
   <body>
       {{> navbar}}
-      <div class='container'>
+      <div class='container main-container'>
       {{{ body }}}
       </div>
-      <footer class="bg-navy text-white mt-5"><h5 class='py-3'>Designed by Ironhack</h5></footer>
+      <div class='sticky-bottom'>
+      <footer class="bg-navy text-white mt-5 fixed-bottom"><h5 class='py-3 px-3'>Designed by Ironhack</h5></footer>
+  </div>
   </body>
 </html>

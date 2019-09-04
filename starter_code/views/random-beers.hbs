@@ -1,0 +1,17 @@
+<div class="card mt-5 pt-5 random-card mx-auto">
+    <img src="{{beer.image_url}}" class="card-img-top random-beer" alt="...">
+    <div class="card-body">
+        <h4 class="card-title">{{beer.name}}</h4>
+        <p>{{this.tagline}}</p>
+        <p class="card-text">{{beer.description}}</p>
+        <p class="card-text">
+            <p><strong>Pairing</strong></p>
+            {{#each beer.food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+            </p>  
+        <p><strong>Brewers Tips: </strong>{{beer.brewers_tips}}</p>    
+    </div>
+</div>
+
+
